@@ -7,7 +7,7 @@ import Skills from './components/Skills';
 import Work from './components/Work';
 import Connect from './components/Connect';
 import NavDots from './components/NavDots';
-import { FaLinkedin, FaEnvelope } from 'react-icons/fa';
+// import { FaLinkedin, FaEnvelope } from 'react-icons/fa';
 import { Navbar, Nav } from 'react-bootstrap';
 
 function App() {
