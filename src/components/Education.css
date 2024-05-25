@@ -23,40 +23,41 @@
   z-index: 1;
 }
 
-.carousel-card {
+.education-card {
   background-color: #ffffff;
   color: #001f3f;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   padding: 20px;
-  height: 400px;
+  height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
+  margin-bottom: 20px;
 }
 
-.carousel-card .card-title {
+.education-card .card-title {
   font-size: 1.5rem;
   color: #001f3f;
   font-weight: bold;
   margin-bottom: 10px;
 }
 
-.carousel-card .card-subtitle {
+.education-card .card-subtitle {
   font-size: 1.2rem;
   color: #001f3f;
   margin-top: 10px;
 }
 
-.carousel-card .card-text {
+.education-card .card-text {
   font-size: 1rem;
   color: #001f3f;
   margin: 5px 0;
 }
 
-.carousel-card .cert-date {
+.education-card .cert-date {
   font-size: 1rem;
   color: #001f3f;
   text-align: left;
@@ -64,67 +65,92 @@
   margin: 5px 0;
 }
 
-.carousel-card .fyp-text {
+.education-card .fyp-text {
   font-size: 1rem;
   color: #ff6f61;
   font-weight: bold;
   font-style: italic;
 }
 
-.education-section .carousel-control-prev,
-.education-section .carousel-control-next,
-.education-section .carousel-indicators {
-  display: none;
+.slide-in-left {
+  animation: slideInLeft 1s forwards;
 }
 
+.slide-in-right {
+  animation: slideInRight 1s forwards;
+}
+
+@keyframes slideInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInRight {
+  from {
+    opacity: 0;
+    transform: translateX(100%);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* Responsive Styles */
 @media (max-width: 768px) {
-  .carousel-card {
-    height: 300px;
+  .education-card {
+    height: auto;
   }
 
-  .carousel-card .card-title {
+  .education-card .card-title {
     font-size: 1.2rem;
   }
 
-  .carousel-card .card-subtitle {
+  .education-card .card-subtitle {
     font-size: 1rem;
   }
 
-  .carousel-card .card-text {
+  .education-card .card-text {
     font-size: 0.9rem;
   }
 
-  .carousel-card .cert-date {
+  .education-card .cert-date {
     font-size: 0.9rem;
   }
 
-  .carousel-card .fyp-text {
+  .education-card .fyp-text {
     font-size: 0.9rem;
   }
 }
 
 @media (max-width: 576px) {
-  .carousel-card {
-    height: 250px;
+  .education-card {
+    height: auto;
   }
 
-  .carousel-card .card-title {
+  .education-card .card-title {
     font-size: 1rem;
   }
 
-  .carousel-card .card-subtitle {
+  .education-card .card-subtitle {
     font-size: 0.8rem;
   }
 
-  .carousel-card .card-text {
+  .education-card .card-text {
     font-size: 0.8rem;
   }
 
-  .carousel-card .cert-date {
+  .education-card .cert-date {
     font-size: 0.8rem;
   }
 
-  .carousel-card .fyp-text {
+  .education-card .fyp-text {
     font-size: 0.8rem;
   }
 }

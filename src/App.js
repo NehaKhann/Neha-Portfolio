@@ -6,6 +6,7 @@ import Education from './components/Education';
 import Skills from './components/Skills';
 import Work from './components/Work';
 import Connect from './components/Connect';
+import Footer from './components/Footer';
 import NavDots from './components/NavDots';
 // import { FaLinkedin, FaEnvelope } from 'react-icons/fa';
 import { Navbar, Nav } from 'react-bootstrap';
@@ -28,23 +29,23 @@ function App() {
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="ml-auto">
               <Nav.Link href="#home">Home</Nav.Link>
-              <Nav.Link href="#connect">Connect</Nav.Link>
               <Nav.Link href="#experience">Experience</Nav.Link>
               <Nav.Link href="#education">Education</Nav.Link>
               <Nav.Link href="#skills">Skills</Nav.Link>
               <Nav.Link href="#work">Work</Nav.Link>
+              <Nav.Link href="#connect">Connect</Nav.Link>
             </Nav>
           </Navbar.Collapse>
         </Navbar>
       </header>
       <NavDots />
       <Home />
-      <Connect />
       <Experience />
       <Education />
       <Skills />
       <Work />
-
+      <Connect />
+      <Footer />
     </div>
   );
 }
