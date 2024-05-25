@@ -3,27 +3,27 @@ import { Carousel } from 'react-bootstrap';
 import { FaUniversity, FaAward, FaCertificate, FaMedal, FaLaptopCode, FaChartBar, FaCube } from 'react-icons/fa';
 import './Education.css';
 
-const educationDetails = [
-  {
-    title: 'Bachelor of Science in Software Engineering',
-    institution: 'NED University of Engineering & Technology',
-    period: '2018 - 2022',
-    description: 'CGPA: 3.9/4.0',
-  },
-  {
-    title: 'Final Year Project',
-    description: 'Developed a predictive maintenance system utilizing an OBD device to collect car sensor data, analyzed with machine learning and AI techniques. The project aimed to predict vehicle faults, monitor car health remotely, and provide solutions via a user-friendly dashboard, enhancing vehicle safety and reducing maintenance costs.',
-  },
-  {
-    title: 'Certifications',
-    description: `
-      Dec 2021 - App Development Competition Powered by GOODCORE
-      Jul 2022 - Participation in Speed Programming Competition
-      Nov 2023 - Two Days Training on Data Modeling using AI and Power BI
-      Dec 2023 - Three Days Training on Quarkus with MicroProfile and Kubernetes
-    `,
-  },
-];
+// const educationDetails = [
+//   {
+//     title: 'Bachelor of Science in Software Engineering',
+//     institution: 'NED University of Engineering & Technology',
+//     period: '2018 - 2022',
+//     description: 'CGPA: 3.9/4.0',
+//   },
+//   {
+//     title: 'Final Year Project',
+//     description: 'Developed a predictive maintenance system utilizing an OBD device to collect car sensor data, analyzed with machine learning and AI techniques. The project aimed to predict vehicle faults, monitor car health remotely, and provide solutions via a user-friendly dashboard, enhancing vehicle safety and reducing maintenance costs.',
+//   },
+//   {
+//     title: 'Certifications',
+//     description: `
+//       Dec 2021 - App Development Competition Powered by GOODCORE
+//       Jul 2022 - Participation in Speed Programming Competition
+//       Nov 2023 - Two Days Training on Data Modeling using AI and Power BI
+//       Dec 2023 - Three Days Training on Quarkus with MicroProfile and Kubernetes
+//     `,
+//   },
+// ];
 
 const Education = () => {
   return (

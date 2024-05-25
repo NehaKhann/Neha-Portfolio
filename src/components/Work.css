@@ -1,81 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap');
+@import '~bootstrap/dist/css/bootstrap.min.css';
+
 .work-section {
-    padding: 60px 0;
-    background-color: #001f3f; /* Matching the Education section background */
-    text-align: center;
-    color: #ffffff; /* Text color to ensure readability */
+  padding: 60px 0;
+  background-color: #001f3f; /* Matching the Education section background */
+  text-align: center;
+  color: #ffffff; /* Text color to ensure readability */
+}
+
+.work-section .section-title {
+  font-size: 3rem;
+  font-weight: bold;
+  color: #ff6f61; /* Matching the title color in the Education section */
+  margin-bottom: 40px;
+}
+
+.technology-dropdown {
+  margin-bottom: 20px;
+  max-width: 200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Three columns */
+  gap: 20px;
+}
+
+.project-card {
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  background-color: #ffffff; /* Card background */
+  color: #001f3f; /* Text color inside the card */
+  cursor: pointer;
+  min-height: 300px; /* Minimum height to fit content */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* Ensure content is evenly spaced */
+  padding: 20px;
+}
+
+.project-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 16px 24px rgba(0, 0, 0, 0.2);
+}
+
+.project-card .card-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #001f3f;
+  margin-bottom: 10px;
+}
+
+.project-card .card-text {
+  font-size: 1rem;
+  color: #333;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.tech-icons {
+  display: flex;
+  justify-content: center;
+  margin-top: 15px;
+}
+
+.tech-icon {
+  font-size: 2rem;
+  margin: 0 10px;
+  color: #001f3f;
+}
+
+/* Responsive Styles */
+@media (max-width: 992px) {
+  .project-grid {
+    grid-template-columns: repeat(2, 1fr); /* Two columns for medium screens */
   }
-  
+}
+
+@media (max-width: 768px) {
   .work-section .section-title {
-    font-size: 3rem;
-    font-weight: bold;
-    color: #ff6f61; /* Matching the title color in the Education section */
-    margin-bottom: 40px;
+    font-size: 2.5rem;
   }
-  
-  .technology-dropdown {
-    margin-bottom: 20px;
-    max-width: 200px;
-    margin-left: auto;
-    margin-right: auto;
+
+  .project-grid {
+    grid-template-columns: 1fr; /* One column for small screens */
   }
-  
-  .project-card {
-    margin-bottom: 30px;
-    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
-    background-color: #ffffff; /* Card background */
-    color: #001f3f; /* Text color inside the card */
-    cursor: pointer;
-  }
-  
-  .project-card:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 16px 24px rgba(0, 0, 0, 0.2);
-  }
-  
+
   .project-card .card-title {
-    font-size: 1.5rem;
-    font-weight: bold;
-    color: #001f3f;
+    font-size: 1.2rem;
   }
-  
+
   .project-card .card-text {
-    font-size: 1rem;
-    color: #333;
+    font-size: 0.9rem;
   }
-  
-  .tech-icons {
-    display: flex;
-    justify-content: center;
-    margin-top: 15px;
-  }
-  
+
   .tech-icon {
-    font-size: 2rem;
-    margin: 0 10px;
-    color: #001f3f;
+    font-size: 1.5rem;
+    margin: 0 5px;
   }
-  
-  /* Responsive Styles */
-  @media (max-width: 768px) {
-    .work-section .section-title {
-      font-size: 2.5rem;
-    }
-  
-    .project-card {
-      margin-bottom: 20px;
-    }
-  
-    .project-card .card-title {
-      font-size: 1.2rem;
-    }
-  
-    .project-card .card-text {
-      font-size: 0.9rem;
-    }
-  
-    .tech-icon {
-      font-size: 1.5rem;
-      margin: 0 5px;
-    }
-  }
-  
+}
