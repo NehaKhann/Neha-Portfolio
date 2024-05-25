@@ -26,12 +26,12 @@ const NavDots = () => {
 
   return (
     <div className="nav-dots">
-      <a href="#home" className={`dot ${activeSection === 'home' ? 'active' : ''}`}></a>
-      <a href="#experience" className={`dot ${activeSection === 'experience' ? 'active' : ''}`}></a>
-      <a href="#education" className={`dot ${activeSection === 'education' ? 'active' : ''}`}></a>
-      <a href="#skills" className={`dot ${activeSection === 'skills' ? 'active' : ''}`}></a>
-      <a href="#work" className={`dot ${activeSection === 'work' ? 'active' : ''}`}></a>
-      <a href="#contact" className={`dot ${activeSection === 'contact' ? 'active' : ''}`}></a>
+      <a href="#home" aria-label="Home" className={`dot ${activeSection === 'home' ? 'active' : ''}`}></a>
+      <a href="#experience" aria-label="Experience" className={`dot ${activeSection === 'experience' ? 'active' : ''}`}></a>
+      <a href="#education" aria-label="Education" className={`dot ${activeSection === 'education' ? 'active' : ''}`}></a>
+      <a href="#skills" aria-label="Skills" className={`dot ${activeSection === 'skills' ? 'active' : ''}`}></a>
+      <a href="#work" aria-label="Work" className={`dot ${activeSection === 'work' ? 'active' : ''}`}></a>
+      <a href="#contact" aria-label="Contact" className={`dot ${activeSection === 'contact' ? 'active' : ''}`}></a>
     </div>
   );
 };
