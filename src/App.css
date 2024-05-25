@@ -1,38 +1,79 @@
-.App {
-  text-align: center;
-}
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap');
+@import '~bootstrap/dist/css/bootstrap.min.css';
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f8f9fa;
+  color: #333;
 }
 
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  background-color: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid #e3e3e3;
+  padding: 1rem 2rem;
+}
+
+.navbar {
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  width: 100%;
 }
 
-.App-link {
-  color: #61dafb;
+.navbar-brand {
+  font-size: 1.5rem;
+  font-weight: bold;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.navbar-nav .nav-link {
+  color: #001f3f; /* Navy blue */
+  font-weight: bold;
+}
+
+.navbar-nav .nav-link:hover {
+  color: #ff6f61; /* Hover color */
+}
+
+.contact-info {
+  display: flex;
+  align-items: center;
+  margin-left: 1rem;
+}
+
+.contact-info a {
+  margin-left: 10px;
+  font-size: 1.5rem;
+}
+
+.contact-icon {
+  color: #001f3f; /* Navy blue */
+}
+
+.contact-icon:hover {
+  color: #001030; /* Darker navy blue */
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
   }
-  to {
-    transform: rotate(360deg);
+
+  .nav-links {
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 1rem;
+  }
+
+  .nav-links li {
+    margin: 0.5rem 0;
+  }
+
+  .contact-info {
+    margin-top: 1rem;
   }
 }

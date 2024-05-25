@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap');
+@import '~bootstrap/dist/css/bootstrap.min.css';
+
+.skills-section {
+  padding: 60px 0;
+  background-color: #f8f9fa;
+  text-align: center;
+}
+
+.section-title {
+  font-size: 3rem;
+  font-weight: bold;
+  color: #001f3f;
+  margin-bottom: 40px;
+}
+
+.skills-grid {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.skill-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 150px;
+  margin: 10px;
+}
+
+.skill-icon {
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+
+.skill-icon.java { color: #007396; }
+.skill-icon.javascript { color: #f0db4f; }
+.skill-icon.node { color: #68a063; }
+.skill-icon.react { color: #61dafb; }
+.skill-icon.python { color: #306998; }
+.skill-icon.database { color: #f29111; }
+.skill-icon.reporting { color: #ffa500; }
+.skill-icon.docker { color: #2496ed; }
+.skill-icon.git { color: #f34f29; }
+.skill-icon.grafana { color: #f46800; }
+.skill-icon.quarkus { color: #4695EB; }
+.skill-icon.dotnet { color: #512BD4; }
+.skill-icon.cpp { color: #00599C; }
+.skill-icon.csharp { color: #178600; }
+.skill-icon.ml { color: #FFA500; }
+.skill-icon.angular { color: #DD0031; }
+.skill-icon.spring { color: #6DB33F; }
+
+.skill-item p {
+  font-size: 1.2rem;
+  color: #001f3f;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: #001f3f;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .section-title {
+    font-size: 2.5rem;
+  }
+
+  .skills-grid {
+    flex-direction: column;
+  }
+
+  .skill-item {
+    width: 100%;
+    margin: 5px 0;
+  }
+
+  .skill-icon {
+    font-size: 2.5rem;
+  }
+
+  .skill-item p {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .section-title {
+    font-size: 2rem;
+  }
+
+  .skill-item {
+    margin: 5px 0;
+  }
+
+  .skill-icon {
+    font-size: 2rem;
+  }
+
+  .skill-item p {
+    font-size: 0.9rem;
+  }
+}
