@@ -3,18 +3,23 @@ import './Home.css';
 
 const Home = () => {
   return (
-    <section id="home">
+    <section id="home" className="home-section">
       <div className="overlay"></div>
-      <div className="content">
-        <div className="text-container">
-          <h1>Hello, I am <span className="text-highlight">Neha Khan</span></h1>
-          <div className="typing-container">
-            <p className="typing-animation">Software Engineer</p>
-            <p className="typing-animation delay-1">Full Stack Developer</p>
+      <div className="container">
+        <div className="row align-items-center">
+          <div className="col-md-8">
+            <h1 className="main-heading">Neha Khan</h1>
+            <h2 className="sub-heading">Software Engineer | Full Stack Developer</h2>
+            <a href="#connect" className="btn btn-primary">Let's Connect</a>
           </div>
-        </div>
-        <div className="image-container">
-          <img src="https://images.unsplash.com/photo-1517433456452-f9633a875f6f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwzNjUyOXwwfDF8c2VhcmNofDl8fGRldmVsb3BtZW50fGVufDB8fHx8MTYyNTQ3NTc5OA&ixlib=rb-1.2.1&q=80&w=1080" alt="Developer" className="img-fluid rounded-circle" />
+          {/* <div className="col-md-6">
+            <h2 className="info-heading">Full Stack Developer</h2>
+            <p className="info-subheading">Check out about me.</p>
+            <div className="info-box">
+              <p>2 Years Experience</p>
+            
+            </div>
+          </div> */}
         </div>
       </div>
     </section>
