@@ -18,7 +18,6 @@ import {
 import {
   SiCplusplus,
   SiCsharp,
-  SiSpring,
   SiQuarkus,
   SiDotnet
 } from 'react-icons/si';
