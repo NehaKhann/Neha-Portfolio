@@ -46,6 +46,10 @@
   .section-title {
     font-size: 2.5rem;
   }
+  
+  .connect-item p {
+    font-size: 1rem;
+  }
 }
 
 @media (max-width: 576px) {
@@ -58,6 +62,25 @@
   }
 
   .connect-item p {
-    font-size: 1rem;
+    font-size: 0.9rem;
+  }
+
+  .connect-icon {
+    font-size: 40px; /* Adjust icon size for smaller screens */
+  }
+}
+
+/* Additional adjustments for extra small screens */
+@media (max-width: 400px) {
+  .section-title {
+    font-size: 1.8rem;
+  }
+
+  .connect-item p {
+    font-size: 0.8rem;
+  }
+
+  .connect-icon {
+    font-size: 35px; /* Further adjust icon size for extra small screens */
   }
 }

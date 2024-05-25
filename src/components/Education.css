@@ -107,6 +107,9 @@
   .education-card {
     height: auto;
   }
+  .education-title {
+    font-size: 2.5rem;
+  }
 
   .education-card .card-title {
     font-size: 1.2rem;
@@ -132,6 +135,9 @@
 @media (max-width: 576px) {
   .education-card {
     height: auto;
+  }
+  .education-title {
+    font-size: 2rem;
   }
 
   .education-card .card-title {
